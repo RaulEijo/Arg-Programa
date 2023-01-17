@@ -1,0 +1,487 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*CSS rules to specify families
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+*/
+
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+   /* font-family: 'Nunito', sans-serif;*/
+}
+
+    
+/*INICIO HEADER*/
+
+.printArea{
+    width: 80%;
+    margin: 20px auto;
+ 
+}
+
+.printArea .header{
+   
+    height: 120px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(44, 86, 122);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    
+}
+
+.headerText h1{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 200px;
+    width: 100%;
+    
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    border: 5px solid white;
+    box-shadow: 5px 5px 5px rgba(11, 1, 71, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+    filter: grayscale(100%);
+    user-select: none;
+
+}
+
+.header img:hover{
+   filter: grayscale(0%);
+   transform: scale(1.05);
+   box-shadow: 5px 5px 20px rgba(11, 1, 71, 0.5);
+}
+
+/*FIN HEADER*/
+
+/*INICIO ASIDE IZQ*/
+
+.contenido{
+    display: flex;
+}
+
+.fondoIzq{
+    color:rgb(44, 86, 122);
+    background-color: lightgray;
+    width: 30%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    
+}
+
+.fondoIzq .contacto{
+    margin-top: 120px;
+    height: 100px;
+
+}
+
+.fondoIzq h2{
+    margin: 10px;
+    font-size: 34px;
+    font-weight: bolder;
+
+}
+
+.fondoIzq h3{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(65, 65, 65);
+}
+
+.fondoIzq p{
+    margin: 10px;
+    font-size: 20px;
+    color:rgb(83, 83, 83);
+}
+
+.margenIzq1{
+    height: 198px;
+    width: 100px;
+    position: relative;
+    border-left: 5px solid rgb(44, 86, 122);
+    bottom: 226px;
+
+}
+
+.margenIzq2{
+    height: 445px;
+    width: 100px;
+    position: relative;
+    border-left: 5px solid rgb(44, 86, 122);
+    bottom: 470px;
+
+}
+
+.fondoIzq .lenguajes{
+    margin-top: 170px;
+    height: 600px;
+}
+
+.barritas1{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+    align-items: justify;
+
+}
+
+.barritas2{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+    margin-top: 100px;
+}
+
+.barra{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barra span{
+    display: block;
+    width: 100px;
+    height: 10px;
+    background-color: rgb(162, 162, 162);
+    border-radius: 10px;
+    position: relative;
+}
+
+.barra span::before{
+    position: absolute;
+    content: "";
+    width:80%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+
+}
+
+#barraEs span::before{
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraIn span::before{
+    position: absolute;
+    content: "";
+    width:75%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraIt span::before{
+    position: absolute;
+    content: "";
+    width:45%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraFr span::before{
+    position: absolute;
+    content: "";
+    width:20%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraC span::before{
+    position: absolute;
+    content: "";
+    width:60%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraHTML span::before{
+    position: absolute;
+    content: "";
+    width:45%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraCSS span::before{
+    position: absolute;
+    content: "";
+    width:45%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#barraJS span::before{
+    position: absolute;
+    content: "";
+    width:20%;
+    height: 80%;
+    background-color: rgb(44, 86, 122);
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.programacion{
+    position: relative;
+    bottom: 360px;
+}
+
+/*FIN ASIDE IZQ*/
+
+/*INICIO ASIDE DER*/
+
+.fondoDer{
+    width: 70%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(154, 177, 255);
+}
+
+.stickyMusic{
+    position: sticky;
+    top: 0px;
+    background-color: rgba(11, 1, 71, 0.5);
+    border: 3px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 90px;
+    text-align: center;
+
+}
+
+.textosDer{
+    position: relative;
+    height: 100px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.triangulito{
+    height: 130px;
+    width: 100px;
+    object-fit: contain;
+    margin: 7px;
+    position: relative;
+    top: -30px;
+}
+
+#triangDer{
+    transform: scaleX(-1);
+}
+
+#infopers{
+    position: relative;
+    top: -82px;
+    left: -2px;
+}
+.fondoDer .textosDer span{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    text-align: center
+}
+
+.imagenesMargen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    width: 100px;
+    /*background-color: brown;*/
+    margin: 0px 7px 0px 7px;
+
+}
+
+.muchoTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    width: 575px;
+    /*background-color: blue;*/
+}
+
+.imagencita{
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.imagenesMargen img:hover{
+    transform: scale(1.05);
+}
+
+.textoInfo{
+    height: 250px;
+    width: 550px;
+    background-color: rgba(11, 1, 71, 0.5);
+    padding: 10px;
+    border: 5px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    /*background-color: #bbb;*/
+    color: white;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: rgb(44, 86, 122);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flip-box-back h2{
+    margin: 2px;
+  }
+
+  #textoInform p{
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+  }
+
+  #textoInform ul{
+    padding-left: 20px;
+    margin: 10px 20px 10px 20px;
+  }
+
+  #botonTurbio{
+    color: black;
+    font-size: 20px;
+    background-color: rgb(162, 162, 162);
+    border: 5px solid white;
+    border-radius: 30px;
+    transition: 0,5s;
+    margin: 10px;
+  }
+
+  #botonTurbio:hover{
+    color: black;
+    background-color: rgb(209, 209, 209);
+    transform: scale(1.05);
+
+  }
+
+ #contenedorDeImagen{
+    background-color: black;
+    height: 2000px;
+    width: 2000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+ }
+
+ #contenedorDeImagen img{
+    scale: 2;
+    filter: opacity(0.2);
+    position: relative;
+    top: 600px;
+    left: 600px
+ }
+
