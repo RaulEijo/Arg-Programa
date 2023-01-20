@@ -4,6 +4,8 @@ var mensajeTurbioIzq = document.getElementById('mensajeTurbioIzq');
 var mensajeTurbioMed = document.getElementById('mensajeTurbioMed');
 var mensajeTurbioDer = document.getElementById('mensajeTurbioDer');
 var botonTurbioTexto = document.getElementById('botonTurbio');
+var programtxt = document.getElementById('programacionTxt');
+var estadoCivil = document.getElementById('estadoCivil');
 
 console.log(clickCount);
 
@@ -19,13 +21,39 @@ document.getElementById('botonTurbio').onclick = function(){
             mensajeTurbioMed.style.color = 'red';
             mensajeTurbioMed.style.fontWeight = 'bold';
             mensajeTurbioMed.style.fontSize = '20px';
+            botonTurbioTexto.innerHTML = "Ver ubicación de todos modos";
         break;
 
         case 2:
+            var audioPuerta = document.getElementById('sonidoPuerta');
+            
+
             mensajeTurbioIzq.innerHTML = "¿De verdad querés saber donde estoy?";
             mensajeTurbioMed.innerHTML = "";
             mensajeTurbioDer.innerHTML = "";
             botonTurbioTexto.innerHTML = "   .   .   .   ";
+
+            setTimeout(reproductorPuerta, 1000)
+
+            function reproductorPuerta(){
+                
+                audioPuerta.play();
+                audioPuerta.volume = 0.15;
+                
+            }
+
+            setTimeout(cambioEsCiv1, 5000)
+
+            function cambioEsCiv1(){
+                estadoCivil.innerHTML = "Escuchaste eso?"
+            }
+
+            setTimeout(cambioEsCiv2, 6000)
+
+            function cambioEsCiv2(){
+                estadoCivil.innerHTML = "Estado civíl: soltero"
+            }
+
         break;
 
         case 3:
@@ -40,7 +68,7 @@ document.getElementById('botonTurbio').onclick = function(){
             var doppleganger = document.getElementById('contenedorDeImagen');
             var printArea = document.getElementById('printAreaId');
             var audioGlitch = document.getElementById('sonidosRancios');
-
+           
 
 
 
@@ -65,9 +93,9 @@ document.getElementById('botonTurbio').onclick = function(){
                 }, 1)
             }
 
-            setTimeout(reproductor, 1000)
+            setTimeout(reproductorGlitch, 1000)
 
-            function reproductor(){
+            function reproductorGlitch(){
                 
                 audioGlitch.play();
             }
@@ -78,7 +106,6 @@ document.getElementById('botonTurbio').onclick = function(){
                 printArea.style.display = 'none'
                 doppleganger.style.display = 'block'
                 
-
             }
 
             setTimeout(cerrarVentana, 12000)
@@ -88,10 +115,6 @@ document.getElementById('botonTurbio').onclick = function(){
             }
             
         break;
-
-
-
-    
 
     }
 }
