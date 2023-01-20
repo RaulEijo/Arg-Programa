@@ -38,17 +38,17 @@ document.getElementById('botonTurbio').onclick = function(){
             function reproductorPuerta(){
                 
                 audioPuerta.play();
-                audioPuerta.volume = 0.15;
+                audioPuerta.volume = 0.2;
                 
             }
 
-            setTimeout(cambioEsCiv1, 5000)
+            setTimeout(cambioEsCiv1, 5300)
 
             function cambioEsCiv1(){
                 estadoCivil.innerHTML = "Escuchaste eso?"
             }
 
-            setTimeout(cambioEsCiv2, 6000)
+            setTimeout(cambioEsCiv2, 6300)
 
             function cambioEsCiv2(){
                 estadoCivil.innerHTML = "Estado civíl: soltero"
